@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <include layout="@layout/header"/>
+
+    <TextView
+        android:id="@+id/vendorQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where Would You Like To Shop?"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tescoBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tescoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tesco"
+        app:layout_constraintBottom_toTopOf="@+id/supervalueBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendorQuestion" />
+
+    <Button
+        android:id="@+id/supervalueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supervalue"
+        app:layout_constraintBottom_toTopOf="@id/centraBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tescoBtn" />
+
+    <Button
+        android:id="@+id/centraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centra"
+        app:layout_constraintBottom_toTopOf="@id/currysBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supervalueBtn" />
+
+    <Button
+        android:id="@+id/currysBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currys"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/centraBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
